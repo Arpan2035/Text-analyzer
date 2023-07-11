@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Solanki Arpan</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 141, 68, 0.751), rgba(0, 142, 119, 0.751)), url(wallpaper.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 200, 255);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.logo{
+    width: 38px;
+    border-radius: 40px;
+    flex: 1;
+    text-align: right;
+}
+#title{
+    text-align: center;
+    font-size: 55px;
+}
+html, body {
+  margin: 0;
+  width:100%;
+  height:100%;
+  background-color: rgb(0, 234, 255);
+	font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+	position: absolute;
+  background-color: rgb(185, 250, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	padding: 0 10px 10px 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+	min-width: 450px;
+	overflow: hidden;
+}
+
+#input {
+	border: 1px solid #060f73;
+	outline: none;
+	width: 100%;
+}
+#but button {
+	background-color: rgb(0, 183, 216);
+	padding: 10px;
+	color: white;
+	border: 1px solid #0055ff;
+	font-weight: 700;
+	font-size:14px;
+	width:100%;
+	outline: none;
+}
+#but button:hover {
+	background-color: #487;
+	cursor: pointer;
+}
+#output{
+	width:100%;
+}
+#left {
+	line-height: 24px;
+	padding-right: 20px;	
+	float: left;
+	width: 270px;
+	margin-bottom:5px;
+}
+#right {
+	line-height: 24px;
+	vertical-align:top;
+	text-align: justify;
+}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="deWebsidejs.js"></script>
+</head>
+<body>
+   <section class="header">
+       <nav>
+        <a href="index.html"><img src="IMG_20230517_220418.jpg" class="logo"></a>
+        <div>
+        <h3> (: Arpan solanki :) </h3>
+        </div>
+    </nav>
+    <div id="title">
+        <h1><u>TEXT ANALYZER</u></h1>
+    </div>
+       
+    </section>
+   <section id="main">
+    <div id="text">
+        <h2><center>Insert your text</center></h2>
+        <textarea maxlength="5000" id="input" rows="12" cols="80" placeholder="For better results, use basic latin alphabet..."></textarea>	 
+    
+            <div id="but">
+              <button id="run">Analyze</button>
+            </div>
+    </div>
+    <div id="output">
+        <div id="left">
+        </div>
+        <div id='right'>
+        </div>
+    </div>
+</section>
+</body>
+</html>
